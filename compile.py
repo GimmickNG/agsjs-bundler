@@ -90,14 +90,12 @@ try:
             print()
         try:
             print(f"Finished! Output: {filename}.zip")
-            print("You can now upload this file to Newgrounds", end='')
-            if test_game:
-                print("!")    # already tested on local httpserver
-            else:
-                print("; ensure it works in the preview before uploading.")
+            print("You can now upload this file to Newgrounds/Itch/GameJolt/etc.", end='')
+            if not test_game:
+                print(" - ensure it works in the preview before uploading.")
             print()
             print("Thank you for using AGS JS!")
-            print("By ericoporto @ https://www.github.com/ericoporto/agsjs")
+            print("- By ericoporto @ https://www.github.com/ericoporto/agsjs")
         except:
             print("Could not create the zip file as there was likely an error during the process.")
     else:
