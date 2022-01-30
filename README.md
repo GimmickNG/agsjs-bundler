@@ -9,7 +9,7 @@ You can also test whether the game runs properly when it prompts you; this will 
 # Requirements
 Tested on Python 3.9, but should work on Python 3.4+
 
-# Caveats
+## Caveats
 - Please carefully read the limitations at https://github.com/ericoporto/ags/blob/emscripten/Emscripten/README.md#changes-from-other-ports if you encounter issues when exporting.
 - If your game has data in subdirectories, it might have to be moved to be in the same directory (i.e. the directory structure might need to be flattened.) This tool only enumerates the files in the same level as the specified data directory, so if you see files are missing in the output .zip then it might be because of this reason.
 
@@ -17,7 +17,7 @@ Tested on Python 3.9, but should work on Python 3.4+
 1. Copy the script to a folder of your choice.
 2. Open a terminal (e.g. Powershell/XTerm) in the same directory as the script, and run it with the command ``python bundle.py``.
 
-Sample run:
+## Sample Run
 ```
 ============ AGS Web Bundle Tool ============
 Enter data directory path: D:\game_data\
