@@ -7,7 +7,7 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 from random import randint
 import requests, tempfile, os, shutil
 
-title = ("=" * 12) + " AGS Web Export Tool " + ("=" * 12)
+title = ("=" * 12) + " AGS Web Bundle Tool " + ("=" * 12)
 print(title)
 
 try:
