@@ -28,9 +28,9 @@ Copying files:
 [3/3] game.ags > C:\Users\GimmickNG\AppData\Local\Temp\tmpeqjrcivd\game.ags ...DONE
 
 Downloading:
-[1/3] index.html from https://raw.githubusercontent.com/ericoporto/ags/emscripten/Emscripten/my_game.html ...DONE
-[2/3] ags.js     from https://raw.githubusercontent.com/ericoporto/agsjs/main/ags.js ...DONE
-[3/3] ags.wasm   from https://github.com/ericoporto/agsjs/raw/main/ags.wasm ...DONE
+[1/3] https://raw.githubusercontent.com/ericoporto/ags/emscripten/Emscripten/my_game.html    > index.html ...DONE
+[2/3] https://raw.githubusercontent.com/ericoporto/agsjs/main/ags.js                         > ags.js ...DONE
+[3/3] https://github.com/ericoporto/agsjs/raw/main/ags.wasm                                  > ags.wasm ...DONE
 
 Writing file list ...DONE
 
