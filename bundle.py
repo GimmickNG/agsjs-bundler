@@ -30,17 +30,17 @@ try:
             print()
 
             print("Downloading:")
-            print(f"[1/3] index.html from {index} ...", flush=True, end='')
+            print(f"[1/3] {index}\t> index.html ...", flush=True, end='')
             with open(join(outdir, 'index.html'), 'wb') as index_page:
                 index_page.write(requests.get(index, allow_redirects=True).content)
             print("DONE")
 
-            print(f"[2/3] ags.js     from {js} ...", flush=True, end='')
+            print(f"[2/3] {js}\t\t\t\t> ags.js ...", flush=True, end='')
             with open(join(outdir, 'ags.js'), 'wb') as js_data:
                 js_data.write(requests.get(js, allow_redirects=True).content)
             print("DONE")
 
-            print(f"[3/3] ags.wasm   from {wasm} ...", flush=True, end='')
+            print(f"[3/3] {wasm}\t\t\t\t\t> ags.wasm ...", flush=True, end='')
             with open(join(outdir, 'ags.wasm'), 'wb') as wasm_data:
                 wasm_data.write(requests.get(wasm, allow_redirects=True).content)
             print("DONE")
