@@ -64,7 +64,7 @@ try:
                     port = randint(2048, 65535)
                     httpd = HTTPServer(('localhost', port), Handler)
                     print(f"Paste the following URL in your browser to verify the game works: http://localhost:{port}/")
-                    print(">>> Press Ctrl+C (^C) to stop testing, and resume export. <<<")
+                    print(">>> Press Ctrl+C (^C) to stop testing, and resume bundling. <<<")
                     httpd.serve_forever()
                 except KeyboardInterrupt: pass
                 finally:
