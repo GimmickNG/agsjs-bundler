@@ -16,6 +16,16 @@ Tested on Python 3.9, but should work on Python 3.4+
 # Usage
 1. Copy the script to a folder of your choice.
 2. Open a terminal (e.g. Powershell, XTerm, etc.) in the same directory as the script, and run it with the command ``python bundle.py``.
+3. Enter the data directory. This is the directory containing your .ags files and other data (in the example below, ``audio.vox``, ``acsetup.cfg`` and ``game.ags`` are in the ``D:\game_data`` directory)
+4. A temporary folder will be created to house the files before the zip is built. Wait for the steps to continue.
+5. If you want to test the game, enter "y" or "Y" at the prompt. Anything else will be treated as a 'no'.
+    - If you selected "Y" to testing the game, the link where the server is hosting the content will be displayed; paste this in your browser of choice.
+    - The game should appear. If there is a black screen with an error message instead, then your game may have issues exporting. Check the [Caveats](#Caveats) section for more information.
+6. If the game runs correctly, then press ``Ctrl+C`` to stop the server and resume the bundling process.
+7. Enter the output file name or path when prompted.
+8. Wait for the file to be saved at the given location.
+9. You can now upload this file to the site of your choice!
+
 
 ## Sample Run
 ```
@@ -37,7 +47,7 @@ Writing file list ...DONE
 Test game? [yN]: y
 
 Paste the following URL in your browser to verify the game works: http://localhost:32053/
->>> Press Ctrl+C (^C) to stop testing, and resume export. <<<
+>>> Press Ctrl+C (^C) to stop testing, and resume bundling. <<<
 Testing finished.
 
 Enter output filename: D:\game_export.zip
