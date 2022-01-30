@@ -10,4 +10,4 @@ Tested on Python 3.9, but should work on Python 3.4+
 # Usage
 Copy the script to a folder of your choice.
 
-Open a terminal (e.g. Powershell/XTerm) in the same directory as the script, and run it with the command ``python compile.py``.
+Open a terminal (e.g. Powershell/XTerm) in the same directory as the script, and run it with the command ``python bundle.py``.
