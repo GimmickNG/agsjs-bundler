@@ -1,5 +1,5 @@
 # agsjs-bundler
-A script to bundle ags games and the agsjs js/wasm dependencies into a zip file for running online.
+A quick script to bundle ags games and the agsjs js/wasm dependencies into a zip file for running online. (This code uses quite a few snippets from stackoverflow, e.g. http server related code, etc.)
 
 Depends on the awesome agsjs library  by ericoporto at https://www.github.com/ericoporto/agsjs. 
 This script merely takes the generated [``ags.js``](https://raw.githubusercontent.com/ericoporto/agsjs/main/ags.js), [``ags.wasm``](https://github.com/ericoporto/agsjs/raw/main/ags.wasm) and [``index.html``](https://raw.githubusercontent.com/ericoporto/ags/emscripten/Emscripten/my_game.html) in the repository (click each file for their direct link), generates the file list ``my_game_files.js`` based on the files in your data directory and compiles it all into a zip for upload to [Newgrounds](https://www.newgrounds.com)/[Itch](https://www.itch.io)/[GameJolt](https://www.gamejolt.com)/etc. 
