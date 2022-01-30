@@ -15,7 +15,7 @@ Tested on Python 3.9, but should work on Python 3.4+
 
 # Usage
 1. Copy the script to a folder of your choice.
-2. Open a terminal (e.g. Powershell/XTerm) in the same directory as the script, and run it with the command ``python bundle.py``.
+2. Open a terminal (e.g. Powershell, XTerm, etc.) in the same directory as the script, and run it with the command ``python bundle.py``.
 
 ## Sample Run
 ```
