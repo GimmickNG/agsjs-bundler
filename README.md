@@ -8,6 +8,7 @@ You can also test whether the game runs properly when it prompts you; this will 
 
 # Requirements
 Python 3.4+, but works best on Python 3.7+
+Requires the ``requests`` library. Get it with ``python -m pip install requests``.
 
 ## Caveats
 - Please carefully read the limitations at https://github.com/ericoporto/ags/blob/emscripten/Emscripten/README.md#changes-from-other-ports if you encounter issues when testing the exported game.
