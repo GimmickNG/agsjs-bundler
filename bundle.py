@@ -5,6 +5,7 @@ from pathlib import Path
 from shutil import make_archive
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from random import randint
+from re import escape, sub as replace
 import requests, tempfile, os, shutil
 
 title = ("=" * 12) + " AGS Web Bundle Tool " + ("=" * 12)
@@ -12,6 +13,7 @@ print(title)
 
 try:
     data_dir = Path(input("Enter data directory path: "))
+    game_name = input("Enter the name of your game: ")
     if os.path.exists(data_dir):
         with tempfile.TemporaryDirectory() as outdir:
             index = 'https://raw.githubusercontent.com/ericoporto/ags/emscripten/Emscripten/my_game.html'
@@ -24,15 +26,17 @@ try:
             num_files = len(game_files)
             for i, file in enumerate(game_files):
                 dest = join(outdir, file)
-                print(f"[{i+1}/{num_files}] {file} > {dest} ...", end='')
+                print(f"[{i+1}/{num_files}] {file} ...", end='')
                 shutil.copy(join(data_dir, file), dest)
                 print("DONE")
             print()
 
             print("Downloading:")
             print(f"[1/3] {index}\t> index.html ...", flush=True, end='')
-            with open(join(outdir, 'index.html'), 'wb') as index_page:
-                index_page.write(requests.get(index, allow_redirects=True).content)
+            with open(join(outdir, 'index.html'), 'w') as index_page:
+                index_html = requests.get(index, allow_redirects=True).text
+                index_html = replace("<title>.*?</title>", f"<title>{escape(game_name)}</title>", index_html)
+                index_page.write(index_html)
             print("DONE")
 
             print(f"[2/3] {js}\t\t\t\t> ags.js ...", flush=True, end='')
@@ -104,4 +108,9 @@ except KeyboardInterrupt:
     print()
     print()
     print("Exiting: halted by user")
+except OSError as err:
+    print()
+    print()
+    print("Error when saving zip file: ", err)
+    print("Perhaps the file name is invalid? Try again with a different file name.")
 print("=" * len(title))
