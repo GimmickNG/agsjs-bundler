@@ -59,4 +59,5 @@ You can now upload this file to Newgrounds/Itch/GameJolt/etc.
 Thank you for using AGS JS!
 - By ericoporto @ https://www.github.com/ericoporto/agsjs
 =============================================
+Press any key to continue...
 ```
