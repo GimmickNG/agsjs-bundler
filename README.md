@@ -7,7 +7,7 @@ This script merely takes the generated [``ags.js``](https://raw.githubuserconten
 You can also test whether the game runs properly when it prompts you; this will open up a http server which serves all the files at ``localhost:<random port>``.
 
 # Requirements
-Tested on Python 3.9, but should work on Python 3.4+
+Python 3.4+, but works best on Python 3.7+
 
 ## Caveats
 - Please carefully read the limitations at https://github.com/ericoporto/ags/blob/emscripten/Emscripten/README.md#changes-from-other-ports if you encounter issues when testing the exported game.
@@ -30,33 +30,33 @@ Tested on Python 3.9, but should work on Python 3.4+
 ## Sample Run
 ```
 ============ AGS Web Bundle Tool ============
-Enter data directory path: D:\game_data\
+Enter data directory path: E:\mygame
+Enter the name of your game: Test Game
 
 Copying files:
-[1/3] acsetup.cfg > C:\Users\GimmickNG\AppData\Local\Temp\tmpeqjrcivd\acsetup.cfg ...DONE
-[2/3] audio.vox > C:\Users\GimmickNG\AppData\Local\Temp\tmpeqjrcivd\audio.vox ...DONE
-[3/3] game.ags > C:\Users\GimmickNG\AppData\Local\Temp\tmpeqjrcivd\game.ags ...DONE
+[1/3] acsetup.cfg ...DONE
+[2/3] audio.vox ...DONE
+[3/3] game.ags ...DONE
 
 Downloading:
-[1/3] https://raw.githubusercontent.com/ericoporto/ags/emscripten/Emscripten/my_game.html    > index.html ...DONE
-[2/3] https://raw.githubusercontent.com/ericoporto/agsjs/main/ags.js                         > ags.js ...DONE
-[3/3] https://github.com/ericoporto/agsjs/raw/main/ags.wasm                                  > ags.wasm ...DONE
+[1/3] https://raw.githubusercontent.com/ericoporto/ags/emscripten/Emscripten/my_game.html       > index.html ...DONE
+[2/3] https://raw.githubusercontent.com/ericoporto/agsjs/main/ags.js                            > ags.js ...DONE
+[3/3] https://github.com/ericoporto/agsjs/raw/main/ags.wasm                                     > ags.wasm ...DONE
 
 Writing file list ...DONE
 
 Test game? [yN]: y
 
-Paste the following URL in your browser to verify the game works: http://localhost:32053/
+Paste the following URL in your browser to verify the game works: http://localhost:5633/
 >>> Press Ctrl+C (^C) to stop testing, and resume bundling. <<<
 Testing finished.
 
-Enter output filename: D:\game_export.zip
-Saving to D:\game_export.zip ...DONE
+Enter output filename: test.zip
+Saving to test.zip ...DONE
 
-Finished! Output: D:\game_export.zip
-You can now upload this file to Newgrounds/Itch/GameJolt/etc.!
-
+Finished! Output: test.zip
+You can now upload this file to Newgrounds/Itch/GameJolt/etc.
 Thank you for using AGS JS!
-By ericoporto @ https://www.github.com/ericoporto/agsjs
+- By ericoporto @ https://www.github.com/ericoporto/agsjs
 =============================================
 ```
