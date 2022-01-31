@@ -114,4 +114,4 @@ except OSError as err:
     print("Error when saving zip file: ", err)
     print("Perhaps the file name is invalid? Try again with a different file name.")
 print("=" * len(title))
-input()
+input("Press any key to continue...")
