@@ -15,7 +15,7 @@ Python 3.4+, but works best on Python 3.7+
 
 # Usage
 1. Copy the script to a folder of your choice.
-2. Open a terminal (e.g. Powershell, XTerm, etc.) in the same directory as the script, and run it with the command ``python bundle.py``. If using Windows, you can also double-click on ``run.cmd``, which just does the same thing.
+2. Open a terminal (e.g. Powershell, XTerm, etc.) in the same directory as the script, and run it with the command ``python bundle.py``. Alternatively, if using Windows, just double-click ``bundle.py`` to run it directly (although the output at the end will not wait for exit, so if the program exits, then it may or may not be due to an error)
 3. Enter the data directory. This is the directory containing your .ags files and other data (in the example below, ``audio.vox``, ``acsetup.cfg`` and ``game.ags`` are in the ``D:\game_data`` directory)
 4. A temporary folder will be created to house the files before the zip is built. Wait for the steps to continue.
 5. If you want to test the game, enter "y" or "Y" at the prompt. Anything else will be treated as a 'no'.
