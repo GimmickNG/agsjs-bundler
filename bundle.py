@@ -18,7 +18,7 @@ try:
         with tempfile.TemporaryDirectory() as outdir:
             index = 'https://raw.githubusercontent.com/ericoporto/ags/emscripten/Emscripten/my_game.html'
             js = 'https://raw.githubusercontent.com/ericoporto/agsjs/main/ags.js'
-            wasm = 'https://github.com/ericoporto/agsjs/raw/main/ags.wasm'
+            wasm = 'https://raw.githubusercontent.com/ericoporto/agsjs/main/ags.wasm'
             print()
 
             print("Copying files:")
